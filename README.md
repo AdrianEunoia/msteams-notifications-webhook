@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Ejecutar Tu Acción
-        uses: AdrianEunoia/mi-utilidad-publicada@v1
+        uses: AdrianEunoia/teams-webhook-notify@v1
         with:
           webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}
 ```

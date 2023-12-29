@@ -10,11 +10,12 @@ inputs:
     required: true
 runs:
   using: 'composite'
-  shell: bash
   steps:
     - name: Send a notification on success
       id: notifySuccess
       run: ./src/success-script.sh
+      shell: bash
     - name: Send a notification on failure
       id: notifyFailure
       run: ./src/failure-script.sh
+      shell: bash

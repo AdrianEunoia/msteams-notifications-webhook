@@ -1,6 +1,9 @@
 name: 'My Notification Action'
 description: 'Send notifications on success or failure'
 author: 'AdrianEunoia'
+branding:
+  icon: 'bell'
+  color: 'white'
 inputs:
   webhook-teams:
     description: 'Teams Webhook URL'

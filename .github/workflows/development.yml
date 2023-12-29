@@ -1,0 +1,19 @@
+name: Tu Flujo de Trabajo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  notificationActions:
+    name: Enviar Notificación
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repositorio
+        uses: actions/checkout@v2
+
+      - name: Ejecutar Tu Acción
+        uses: AdrianEunoia/pruebas-actions@v1
+        with:
+          webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}

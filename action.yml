@@ -10,6 +10,7 @@ inputs:
     required: true
 runs:
   using: 'composite'
+  shell: bash
   steps:
     - name: Send a notification on success
       id: notifySuccess

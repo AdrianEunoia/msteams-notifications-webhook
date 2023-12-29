@@ -12,14 +12,14 @@ runs:
   using: 'composite'
   steps:
     - name: Set execute permissions for success-script.sh
-      run: chmod +x ./src/success-script.sh
+      run: chmod u+x ./src/success-script.sh
       shell: bash
     - name: Send a notification on success
       id: notifySuccess
       run: ./src/success-script.sh
       shell: bash
     - name: Set execute permissions for failure-script.sh
-      run: chmod +x ./src/failure-script.sh
+      run: chmod u+x ./src/failure-script.sh
       shell: bash
     - name: Send a notification on failure
       id: notifyFailure

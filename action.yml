@@ -3,7 +3,7 @@ description: 'Send notifications on success or failure'
 author: 'AdrianEunoia'
 branding:
   icon: 'bell'
-  color: 'white'
+  color: 'blue'
 inputs:
   webhook-teams:
     description: 'Teams Webhook URL'
@@ -13,7 +13,7 @@ runs:
   steps:
     - name: Send a notification on success
       id: notifySuccess
-      run: ./path/to/your/script-on-success.sh
+      run: ./src/success-script.sh
     - name: Send a notification on failure
       id: notifyFailure
-      run: ./path/to/your/script-on-failure.sh
+      run: ./src/failure-script.sh

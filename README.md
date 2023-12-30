@@ -1,6 +1,6 @@
 # My Notification Action
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/mi-nombre/mi-utilidad-publicada/Your%20Workflow?label=workflow)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AdrianEunoia/pruebas-actions/WorkflowStatus?label=WorkflowStatus)](https://github.com/AdrianEunoia/pruebas-actions/actions)
 
 ## Descripción
 

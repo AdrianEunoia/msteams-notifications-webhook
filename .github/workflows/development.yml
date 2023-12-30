@@ -11,9 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repositorio
-        uses: actions/checkout@v512
+        uses: actions/checkout@v2
 
       - name: Ejecutar Tu Acción
         uses: AdrianEunoia/pruebas-actions@30122023.14
         with:
           webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}
+          

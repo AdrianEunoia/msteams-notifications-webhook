@@ -20,6 +20,9 @@ jobs:
       - randomWorkflowJob
 
     steps:
+      - name: Checkout Repositorio
+        uses: actions/checkout@v2
+        
       - name: Ejecutar Tu Acción
         uses: AdrianEunoia/msteams-notifications-webhook@v1.0
         with:

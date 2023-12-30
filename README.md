@@ -1,6 +1,9 @@
 # My Notification Action
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AdrianEunoia/pruebas-actions/WorkflowStatus?label=WorkflowStatus)](https://github.com/AdrianEunoia/pruebas-actions/actions)
+[![WorkflowStatus](https://github.com/AdrianEunoia/pruebas-actions/actions/workflows/development.yml/badge.svg)](https://github.com/AdrianEunoia/pruebas-actions/actions/workflows/development.yml)
+[![https://github.com/AdrianEunoia/pruebas-actions/actions/workflows/WorkflowStatus](https://github.com/AdrianEunoia/pruebas-actions/workflows/https%3A%2F%2Fgithub.com%2FAdrianEunoia%2Fpruebas-actions%2Factions%2Fworkflows%2FWorkflowStatus/badge.svg)](https://github.com/AdrianEunoia/pruebas-actions/actions?query=workflow:"https://github.com/AdrianEunoia/pruebas-actions/actions/workflows/WorkflowStatus")
+[![GitHub release](https://img.shields.io/github/release/AdrianEunoia/pruebas-actions?include_prereleases=&sort=semver&color=brightgreen)](https://github.com/AdrianEunoia/pruebas-actions/releases/)
+[![issues - pruebas-actions](https://img.shields.io/github/issues/AdrianEunoia/pruebas-actions)](https://github.com/AdrianEunoia/pruebas-actions/issues)
 
 ## Descripción
 

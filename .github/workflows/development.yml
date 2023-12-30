@@ -6,15 +6,22 @@ on:
       - main
 
 jobs:
-  notificationActions:
-    name: Enviar Notificación
+  randomWorkflowJob:
+    name: Trabajo de ejemplo
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repositorio
         uses: actions/checkout@v2
+          
+  notificationActions:
+    name: Enviar Notificación
+    runs-on: ubuntu-latest
+    needs:
+      - randomWorkflowJob
 
+    steps:
       - name: Ejecutar Tu Acción
-        uses: AdrianEunoia/pruebas-actions@30122023.14
+        uses: AdrianEunoia/msteams-notifications-webhook@30122023.14
         with:
           webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}
           

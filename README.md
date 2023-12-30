@@ -13,7 +13,7 @@ Esta acción de GitHub te permite enviar notificaciones a través de Microsoft T
 Para usar esta acción, simplemente añade el siguiente bloque a tu archivo de flujo de trabajo `.github/workflows/your-action.yml`:
 
 ```yaml
-name: Tu Flujo de Trabajo
+name: Workflow
 
 on:
   push:
@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Ejecutar Tu Acción
-        uses: AdrianEunoia/teams-webhook-notify@v1
+        uses: AdrianEunoia/msteams-notifications-webhook@v1
         with:
           webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}
 ```
@@ -54,5 +54,6 @@ failure-script.sh: Script que se ejecuta en caso de fallo.
 Contribuciones
 ¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes alguna mejora, por favor abre un problema o envía un pull request.
 
-Licencia
-Este proyecto está bajo la Licencia MIT.
+# License
+
+Released under [MIT](/LICENSE) by [@AdrianEunoia](https://github.com/AdrianEunoia).

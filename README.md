@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Ejecutar Tu Acción
-        uses: AdrianEunoia/msteams-notifications-webhook@v1
+        uses: AdrianEunoia/msteams-notifications-webhook@v1.0
         with:
           webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}
 ```

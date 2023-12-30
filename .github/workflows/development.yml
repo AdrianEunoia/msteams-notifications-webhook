@@ -21,7 +21,7 @@ jobs:
 
     steps:
       - name: Ejecutar Tu Acción
-        uses: AdrianEunoia/msteams-notifications-webhook@30122023.14
+        uses: AdrianEunoia/msteams-notifications-webhook@v1.0
         with:
           webhook-teams: ${{ secrets.WEBHOOK_TEAMS }}
           

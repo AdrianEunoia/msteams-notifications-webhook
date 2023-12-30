@@ -51,7 +51,14 @@ failure-script.sh: Script que se ejecuta en caso de fallo.
 # Ejemplos
 ## Puedes encontrar ejemplos adicionales y personalizaciones en la sección de ejemplos.
 
-Contribuciones
+## Success notification.
+![image](https://github.com/AdrianEunoia/msteams-notifications-webhook/assets/45033738/75b90e09-fcd2-41bc-a410-668c49b403e7)
+
+## Failure notification.
+![image](https://github.com/AdrianEunoia/msteams-notifications-webhook/assets/45033738/8086bb50-c567-4b4a-a535-63702f2c6c0d)
+
+
+## Contribuciones
 ¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes alguna mejora, por favor abre un problema o envía un pull request.
 
 # License

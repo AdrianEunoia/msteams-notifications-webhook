@@ -1,5 +1,6 @@
 #!/bin/bash
 
+WEBHOOK_TEAMS=$1
 echo "WEBHOOK_TEAMS: $WEBHOOK_TEAMS"
 
 cat << EOF > message.json

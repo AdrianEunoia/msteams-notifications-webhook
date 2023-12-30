@@ -16,12 +16,12 @@ runs:
       shell: bash
     - name: Send a notification on success
       id: notifySuccess
-      run: ./src/success-script.sh
+      run: ./src/success-script.sh "${{ inputs.webhook-teams }}"
       shell: bash
     - name: Set execute permissions for failure-script.sh
       run: chmod u+x ./src/failure-script.sh
       shell: bash
     - name: Send a notification on failure
       id: notifyFailure
-      run: ./src/failure-script.sh
+      run: ./src/failure-script.sh "${{ inputs.webhook-teams }}"
       shell: bash

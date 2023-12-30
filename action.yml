@@ -18,6 +18,7 @@ runs:
       id: notifySuccess
       run: ./src/success-script.sh "${{ inputs.webhook-teams }}"
       shell: bash
+      if: ${{ success() }}
     - name: Set execute permissions for failure-script.sh
       run: chmod u+x ./src/failure-script.sh
       shell: bash
@@ -25,3 +26,5 @@ runs:
       id: notifyFailure
       run: ./src/failure-script.sh "${{ inputs.webhook-teams }}"
       shell: bash
+      if: ${{ failure() }}
+

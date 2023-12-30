@@ -1,4 +1,4 @@
-name: Tu Flujo de Trabajo
+name: WorkflowStatus
 
 on:
   push:

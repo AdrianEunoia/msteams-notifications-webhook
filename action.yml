@@ -9,22 +9,7 @@ inputs:
     description: 'Teams Webhook URL'
     required: true
 runs:
-  using: 'composite'
-  steps:
-    - name: Set execute permissions for success-script.sh
-      run: chmod u+x ./src/success-script.sh
-      shell: bash
-    - name: Send a notification on success
-      id: notifySuccess
-      run: ./src/success-script.sh "${{ inputs.webhook-teams }}"
-      shell: bash
-      if: ${{ success() }}
-    - name: Set execute permissions for failure-script.sh
-      run: chmod u+x ./src/failure-script.sh
-      shell: bash
-    - name: Send a notification on failure
-      id: notifyFailure
-      run: ./src/failure-script.sh "${{ inputs.webhook-teams }}"
-      shell: bash
-      if: ${{ failure() }}
-
+  using: 'docker'
+  image: 'eunoiadocker/msteams-notifications-webhook:v1.11'
+  args:
+    - ${{ inputs.webhook-teams }}
